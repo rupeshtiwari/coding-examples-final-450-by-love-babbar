@@ -1,0 +1,23 @@
+{
+  "name": "coding-examples-final-450-by-love-babbar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node spec/index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rupeshtiwari/coding-examples-final-450-by-love-babbar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rupeshtiwari/coding-examples-final-450-by-love-babbar/issues"
+  },
+  "homepage": "https://github.com/rupeshtiwari/coding-examples-final-450-by-love-babbar#readme",
+  "devDependencies": {
+    "jasmine": "^3.8.0"
+  }
+}
