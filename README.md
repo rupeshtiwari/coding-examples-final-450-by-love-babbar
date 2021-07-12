@@ -5,3 +5,17 @@
 ## Pull Requests are Welcome
 
 Feel free to create pull request for improvements and corrections.
+
+## Getting project 
+
+```
+# Run git clone
+git clone 'url of this project'
+
+# Run npm ci
+npm ci
+
+# Run specs 
+npm test
+
+```
