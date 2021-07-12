@@ -6,7 +6,7 @@
 
 Feel free to create pull request for improvements and corrections.
 
-## Getting project 
+## Getting and running project
 
 ```cli
 # Run git clone
@@ -15,7 +15,11 @@ git clone 'url of this project'
 # Run npm ci
 npm ci
 
-# Run specs 
+# Run specs
 npm test
 
 ```
+
+## Here is the CodePen link
+
+https://codepen.io/collection/zxzmLw
