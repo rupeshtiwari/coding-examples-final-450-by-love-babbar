@@ -20,7 +20,6 @@
   "homepage": "https://github.com/rupeshtiwari/coding-examples-final-450-by-love-babbar#readme",
   "devDependencies": {
     "jasmine": "^3.8.0",
-    "jasmine-node": "^3.0.0",
     "karma": "^6.3.4",
     "karma-chrome-launcher": "^3.1.0",
     "karma-jasmine": "^4.0.1",
