@@ -2,9 +2,10 @@
   "name": "coding-examples-final-450-by-love-babbar",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "spec/index.mjs",
   "scripts": {
-    "test": "node spec/index.mjs"
+    "test:once": "karma start karma.conf.js",
+    "test": "karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,12 @@
   },
   "homepage": "https://github.com/rupeshtiwari/coding-examples-final-450-by-love-babbar#readme",
   "devDependencies": {
-    "jasmine": "^3.8.0"
-  }
+    "jasmine": "^3.8.0",
+    "jasmine-node": "^3.0.0",
+    "karma": "^6.3.4",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^4.0.1",
+    "karma-jasmine-html-reporter": "^1.7.0"
+  },
+  "dependencies": {}
 }
