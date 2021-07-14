@@ -14,7 +14,7 @@ describe("reverseWord", () => {
     expect(reverseWord("Geeks")).toBe("skeeG");
   });
   it("test #1", () => {
-    expect(reverseWord("for")).toBe("rof");
+    expect(reverseWord("for")).toBe("rofx");
   });
 });
 
