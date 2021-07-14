@@ -2,18 +2,15 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
-  
+    branches: [main]
 
 jobs:
   build:
-
+    if: "!contains(github.event.head_commit.message, '[skip CI]')"
     runs-on: ubuntu-latest
-
     steps:
-      - if: "!contains(github.event.head_commit.message, '[skip CI]')"
       - uses: actions/checkout@v2
       - name: Use Node.js
         uses: actions/setup-node@v2
