@@ -24,7 +24,7 @@ module.exports = function(config) {
     // possible values: 'dots', 'progress'
     // available reporters: https://www.npmjs.com/search?q=keywords:karma-reporter
     reporters: ['progress', 'kjhtml'],
-    client:{clearContext:false},
+    client: { clearContext: false },
 
     // web server port
     port: 9876,
@@ -41,7 +41,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://www.npmjs.com/search?q=keywords:karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['Chrome', 'ChromeHeadless'],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits

@@ -35,6 +35,7 @@ function findMaxMin2(array) {
 
   return { min, max };
 }
+
 describe('findMaxMin2', () => {
   it('test #1', () => {
     expect(findMaxMin2([1000, 11, 445, 1, 330, 3000])).toEqual({

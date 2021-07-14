@@ -4,7 +4,7 @@
   "description": "",
   "main": "spec/index.mjs",
   "scripts": {
-    "test:once": "karma start karma.conf.js",
+    "test:once": "karma start --single-run --browsers ChromeHeadless karma.conf.js",
     "test": "karma start karma.conf.js"
   },
   "repository": {
