@@ -1,4 +1,5 @@
 
+// https://practice.geeksforgeeks.org/problems/reverse-a-string/1
 function reverseWord(word) {
   const length = word.length;
   let reversed = "";

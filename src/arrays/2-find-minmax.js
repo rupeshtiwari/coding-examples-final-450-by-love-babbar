@@ -1,3 +1,5 @@
+
+// https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
 /*
 O( n  ) time | O(1) space
 Comparison = n/2 (optimized)
