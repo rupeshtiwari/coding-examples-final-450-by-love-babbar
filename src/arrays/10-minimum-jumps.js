@@ -8,12 +8,12 @@ function minJumps(array) {
   }
 
   let jumps = 0;
-  let interval = { start: 0, end: 0 };
+  let position = { startIdx: 0, endIdx: 0 };
 
   while (true) {
     jumps++;
     let canReach = -1;
-    let { start, end } = interval;
+    let { startIdx: start, endIdx: end } = position;
     for (let idx = start; idx <= end; idx++) {
       canReach = Math.max(canReach, idx + array[idx]);
     }
@@ -21,10 +21,10 @@ function minJumps(array) {
       return jumps;
     }
 
-    interval.start = interval.end + 1;
-    interval.end = canReach;
+    position.startIdx = position.endIdx + 1;
+    position.endIdx = canReach;
 
-    if (interval.start > interval.end) {
+    if (position.startIdx > position.endIdx) {
       return -1;
     }
   }
