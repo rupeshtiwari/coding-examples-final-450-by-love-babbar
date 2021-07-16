@@ -1,5 +1,7 @@
 // https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1
 
+
+//=================================================
 /*
 // O(n*n*n) time | O(1) space
 function maxSubarraySum(arr) {
@@ -21,6 +23,9 @@ function maxSubarraySum(arr) {
 }
 //*/
 
+
+
+//=================================================
 /*
 // O(n*n) time | O(n) space
 function maxSubarraySum(arr) {
@@ -45,6 +50,8 @@ function maxSubarraySum(arr) {
 }
 //*/
 
+//=================================================
+
 //*
 // O(n) time | O(1) space
 // KADANE's Algorithm
@@ -55,8 +62,8 @@ function maxSubarraySum(arr) {
 
   for (let idx = 0; idx < length; idx++) {
     sum += arr[idx];
-    if (sum < 0) sum = arr[idx];
     if (sum > maxSum) maxSum = sum;
+    if (sum < 0) sum =0;
   }
 
   return maxSum;
@@ -73,4 +80,16 @@ describe('maxSubarraySum', () => {
   it('test #3', () => {
     expect(maxSubarraySum([7, 5, -13, 5, 10, -2, 5])).toEqual(18);
   });
+
+  it('test #3', () => {
+    expect(
+      maxSubarraySum([
+        9, -51, -20, -13, -51, 40, -21, 75, -24, 29, -86, 5, -38, 15, 48, -87,
+        -9, 42, 39, 64, 47, -63, 22, -81, -20, -100, 28,
+      ])
+    ).toEqual(192);
+  });
+    it('test #1', () => {
+      expect(maxSubarraySum([5,-4,-2,6,-1])).toEqual(6);
+    });
 });
