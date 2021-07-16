@@ -1,4 +1,6 @@
 // https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/1
+
+// O(a+b) | time O(a+b) space
 function doUnion(a, b) {
   n = a.length;
   m = b.length;
