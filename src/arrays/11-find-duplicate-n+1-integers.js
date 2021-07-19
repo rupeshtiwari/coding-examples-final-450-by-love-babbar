@@ -1,3 +1,4 @@
+// 
 function findDuplicate(array) {
   const length = array.length;
   let count = 0;

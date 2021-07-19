@@ -1,4 +1,4 @@
-function maxSubArraySum(arr) {
+function maxSubArraySumKadaneAlgo(arr) {
   let overAllMax = Number.MIN_SAFE_INTEGER;
   let currentSum = 0;
   for (let idx = 0; idx < arr.length; idx++) {
@@ -13,14 +13,14 @@ function maxSubArraySum(arr) {
 
 describe('kadane Algorithm Max Contigous Subarray Sum', () => {
   it('test #1', () => {
-    expect(maxSubArraySum([1, 2, 3, -2, 5])).toEqual(9);
+    expect(maxSubArraySumKadaneAlgo([1, 2, 3, -2, 5])).toEqual(9);
   });
   it('test #2', () => {
-    expect(maxSubArraySum([-1, -2, -3, -4])).toEqual(-1);
+    expect(maxSubArraySumKadaneAlgo([-1, -2, -3, -4])).toEqual(-1);
   });
   it('test #2', () => {
     expect(
-      maxSubArraySum([
+      maxSubArraySumKadaneAlgo([
         74, -72, 94, -53, -59, -3, -66, 36, -13, 22, 73, 15, -52, 75,
       ])
     ).toEqual(156);
