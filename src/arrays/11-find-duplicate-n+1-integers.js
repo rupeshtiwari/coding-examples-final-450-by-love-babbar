@@ -13,8 +13,6 @@ function findDuplicate(array) {
       return idx;
     }
   }
-
-  return count;
 }
 /**
  * [1,3,4,2,2]
