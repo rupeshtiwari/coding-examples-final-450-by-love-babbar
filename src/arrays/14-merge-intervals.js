@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/merge-intervals/
 // O(N Log(N)) time | O(1) space
-function merge(intervals) {
+function mergeIntervals(intervals) {
   const length = intervals.length; // 4
   intervals.sort((a, b) => a - b);
   let [_, previousEnd] = intervals[0]; // previousEnd=3
@@ -33,7 +33,7 @@ function merge(intervals) {
 describe('merge', () => {
   it('test #1', () => {
     expect(
-      merge([
+      mergeIntervals([
         [1, 3],
         [2, 6],
         [8, 10],
@@ -43,7 +43,7 @@ describe('merge', () => {
   });
   it('test #2', () => {
     expect(
-      merge([
+      mergeIntervals([
         [1, 4],
         [4, 5],
       ])

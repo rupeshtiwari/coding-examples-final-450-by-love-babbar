@@ -39,7 +39,7 @@ function sort012(arr) {
   return arr;
 }
 
-describe('sort 0 1 2', () => {
+describe('sort array with 0 1 2 only', () => {
   it('test #1', () => {
     expect(sort012([0, 2, 1, 2, 0])).toEqual([0, 0, 1, 2, 2]);
   });
